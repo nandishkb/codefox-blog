@@ -1,0 +1,271 @@
+/* CSS file */
+html, body, title, h1, h2, h3, p, div, ul, ol, li {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+
+hr {
+	border-color: #000000;
+}
+
+body {
+	background: url(images/background.png);
+}
+
+.headercontainer {
+	margin-top: 10px;
+	display: flex;
+	/* flex-direction: column; */
+  	justify-content: center;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo img {
+	border-radius: 25px;
+}
+
+.navigation {
+	display: inline-block;
+	font-family: serif, colonna-mt, "BrixSans",Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 75px;
+    /* padding-bottom: 10px; */
+    font-weight: bold;
+    /* vertical-align: middle; */
+}
+
+.header-list li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.sideheader-list li a {
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 15px;
+}
+
+.header-list li {
+	display: inline;
+	margin: 0 30px 30px 0;
+	background-color: #222222;
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 25px;
+}
+
+.header-list li:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.content {
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 32px;
+	width: 800px;
+	height: 100%;
+	font-family: verdana;
+}
+
+.sidebar {
+	width: 221px;
+	height: 50%;
+	margin-top: 10px;
+	margin-left: 160px;
+	
+}
+
+.sidebar ul li {
+	font-size: 30px;
+	margin: 15px 0;
+	list-style-type: none;
+	text-align: left;
+	font-weight: bold;
+	background-color: #222222;
+	padding: 10px;
+	color: #ffffff;
+	border-radius: 25px;
+}
+
+.sidebar li:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.mainblock {
+	display: flex;
+	flex-direction: row;
+  	justify-content: center;
+}
+
+.content-header {
+	text-align: left;
+	font-family: verdana;
+	/* display: none; */
+}
+
+.home-page, .aboutus-page {
+	
+	margin-top: 30px;
+	line-height: 50px;
+	
+	font-size: 20px;
+	text-align: left;
+}
+
+.home-page ul li, .aboutus-page ul li {
+	margin-left: 50px;
+}
+
+.signinwarning-page {
+	line-height: 50px;
+	font-size: 25px;
+	text-align: left;
+}
+
+.login-form table {
+    border-spacing: 20px 0px;
+}
+
+.login-form table #label {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.login-form table #value input {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.login-form table #value #form-login-button {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #222222;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 3px 10px;
+}
+
+.login-form table #value #form-login-button:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.register-form table input {
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.register-form table #register-button {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #222222;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 3px 10px;
+}
+
+.register-form table #register-button:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.login #login-option-message {
+	font-size: 15px;
+}
+
+.contactus-content .contactus-page a {
+	font-size: 25px;
+	text-decoration: none;
+	/* color: #ffffff; */
+	color: orange;
+	background-color: #000000;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.contactus-content .contactus-page a:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.contactus-page {
+	margin-top: 32px;
+}
+
+.create-blog-form table {
+	border-spacing: 20px 20px;
+	font-size: 25px;
+}
+
+.create-blog-form table input {
+	font-size: 25px;
+	border-radius: 5px;
+	width: 600px;
+}
+
+.create-blog-form #label {
+	border-radius: 5px;
+}
+
+.create-blog-form #description #des-text {
+	font-size: 20px;
+	width: 685px;
+	height: 200px;
+	border-radius: 5px;
+}
+
+.create-blog-form #submit-button {
+	font-size: 25px;
+	border-radius: 10px;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 5px 10px;
+}
+
+.create-blog-form #submit-button:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.view-blogs-section #view-blog-table, .search-blog-section #search-blog-table {
+	font-size: 20px;
+	text-align: center;
+}
+
+.view-blogs-section #view-blog-table tr:FIRST-CHILD,  .search-blog-section #search-blog-table tr:FIRST-CHILD{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.search-blog #search-action td {
+	font-size: 20px;
+}
+
+.search-blog #search-action input {
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.search-blog #search-action button {
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 5px 15px;
+}
+
+.search-blog #search-action button:HOVER {
+	background-color: #666666;
+	color: #ffffff;
+}

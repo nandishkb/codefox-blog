@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/blog-api" xmlns:tns="http://www.example.org/blog-api" elementFormDefault="qualified">
+	<element name="firstName" type="string"/>
+	<element name="lastName" type="string"/>
+	<element name="email" type="string"/>
+	<element name="phoneNumber" type="long"/>
+	<element name="password" type="string"/>
+	<element name="userId" type="int"/>
+	
+	<element name="questionId" type="int"/>
+	<element name="title" type="string"/>
+	<element name="description" type="string"/>
+	
+	<element name="answerId" type="int"/>
+	<element name="answerData" type="string"/>
+
+	<element name="user">	
+		<complexType>
+			<sequence>
+				<element ref="tns:userId"/>
+				<element ref="tns:firstName"/>
+				<element ref="tns:lastName"/>
+				<element ref="tns:email"/>
+				<element ref="tns:phoneNumber"/>
+				<element ref="tns:password"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="question">
+		<complexType>
+			<sequence>
+				<element ref="tns:questionId"/>
+				<element ref="tns:title"/>
+				<element ref="tns:description"/>
+				<element ref="tns:user" minOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<element name="answer">
+		<complexType>
+			<sequence>
+				<element ref="tns:answerId"/>
+				<element ref="tns:answerData"/>
+				<element ref="tns:user" minOccurs="1"/>
+				<element ref="tns:question" minOccurs="1"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>
