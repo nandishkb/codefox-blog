@@ -25,14 +25,16 @@ $(document).ready(function() {
 				password='';
 				loggedIn = false;
 				userId = -1;
+			},
+			error: function() {
+				
+			},
+			complete: function() {
 				hideAllAndDisplay(loginOptions);
 				$('#login-button').unbind();
 				$('#login-button').on('click', function() {
 					hideAllAndDisplay(loginOptions);
 				});
-			},
-			error: function() {
-				
 			}
 		});
 	};
@@ -109,6 +111,8 @@ $(document).ready(function() {
 				console.log(request);
 				if (request.status == 401) {
 					hideAllAndDisplay(warning);
+					logout();
+					warning.slideDown();
 				}
 			}
 		});
@@ -128,6 +132,8 @@ $(document).ready(function() {
 				console.log(request);
 				if (request.status == 401) {
 					hideAllAndDisplay(warning);
+					logout();
+					warning.slideDown();
 				}
 			}
 		});
@@ -146,6 +152,8 @@ $(document).ready(function() {
 				console.log(request);
 				if (request.status == 401) {
 					hideAllAndDisplay(warning);
+					logout();
+					warning.slideDown();
 				}
 			}
 		});
