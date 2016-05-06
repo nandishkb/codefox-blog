@@ -83,5 +83,9 @@ public class CodeFoxBlog implements WebBlog {
     public List<Answer> findAnswers(int questionId) {
         return dao.findAnswers(questionId);
     }
+    
+    public void setBlogDao(BlogDAO dao) {
+        this.dao = dao;
+    }
 
 }
