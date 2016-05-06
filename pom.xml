@@ -4,6 +4,10 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<url>http://maven.apache.org</url>
+	<groupId>com.codefox.blog</groupId>
+	<artifactId>codefox-blog</artifactId>
+	<name>Codefox Blog</name>
+	<description>This app contains HTML, CSS, Java Script, JQuery as frontend and Servlet, REST, Hibernate and MYSQL as backend</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.glassfish.jersey.core</groupId>
@@ -35,9 +39,14 @@
 			<artifactId>commons-beanutils</artifactId>
 			<version>1.9.2</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
+			<version>4.3.9.Final</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.3.9.Final</version>
 		</dependency>
 		<!-- <dependency>
@@ -80,8 +89,4 @@
 	<build>
 		<finalName>codefoxapp</finalName>
 	</build>
-	<groupId>com.codefox.blog</groupId>
-	<artifactId>codefox-blog</artifactId>
-	<name>Codefox Blog</name>
-	<description>This app contains HTML, CSS, Java Script, JQuery as frontend and Servlet, REST, Hibernate and MYSQL as backend</description>
 </project>
